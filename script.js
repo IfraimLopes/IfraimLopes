@@ -23,9 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  function stop(){
-    window.alert("Este projeto ainda não foi disponiblizado.")
-  }
+  document.querySelectorAll('.stop').forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert("Este projeto ainda não foi disponibilizado.");
+  });
+}); 
 
 
   // Basic form submit feedback (prevents actual mailto test in dev)
