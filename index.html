@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ifraim Lopes — Desenvolvedor Web</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous"/>
+  <!--Link Mobile-->
+  <link rel="stylesheet" href="mobile.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#home">IfraimLopes</a>
+
+      <button id="navToggle" aria-label="Alternar menu" class="nav-toggle">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <!-- HERO / BANNER -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <h1>Olá — Eu sou <span>Ifraim Lopes</span></h1>
+        <p class="lead">
+          Desenvolvedor Web Fullstack criando websites modernos, rápidos e acessíveis usando HTML, CSS, JavaScript e PHP/MySQL. Ajudo empresas a melhorar conversões e presença digital.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#projects"><i class="fa-solid fa-folder-open"> </i> Ver Projetos</a>
+          <a class="btn outline" href="https://wa.me/244927217208" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Contato
+          </a>
+        </div>
+
+        <div class="meta">
+          <span><i class="fa-solid fa-location-dot"></i> Luanda, Angola</span>
+          <span><i class="fa-brands fa-github"></i> <a href="https://github.com/IfraimLopes" target="_blank" rel="noopener">github.com/IfraimLopes</a></span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait">
+          <img src="img/pexels-hiteshchoudhary-879109.jpg" alt="Retrato de Ifraim Lopes">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="wrap">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Sou um desenvolvedor dedicado com experiência tanto em frontend quanto em backend.
+            Crio interfaces responsivas, integro APIs e desenvolvo sistemas administrativos com PHP & MySQL.
+            Foco em performance, acessibilidade e em entregar uma excelente experiência ao usuário.
+          </p>
+
+          <ul class="info-list">
+            <li><strong>Nome:</strong> Ifraim Lopes</li>
+            <li><strong>Localização:</strong> Luanda, Angola</li>
+            <li><strong>Email:</strong> <a href="mailto:ifraimlopes213@gmail.com">ifraimlopes213@gmail.com</a></li>
+            <li><strong>Telefone:</strong> +244 927217208</li>
+          </ul>
+        </div>
+
+        <div class="about-cards">
+          <div class="card">
+            <i class="fa-solid fa-people-roof"></i>
+            <h4>Profissional</h4>
+            <p>Criando websites e sistemas de gestão prontos para produção.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h4>Resolutor de Problemas</h4>
+            <p>Abordagem prática para resolver problemas reais de negócios.</p>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-rocket"></i>
+            <h4>Entrega Rápida</h4>
+            <p>Foco em prazos e comunicação clara.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section services">
+    <div class="wrap">
+      <h2 class="section-title">Serviços</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Desenvolvimento Web</h3>
+          <p>Websites responsivos personalizados com as melhores práticas em HTML, CSS e JS.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Backend & APIs</h3>
+          <p>Sistemas PHP & MySQL, APIs REST e aplicações orientadas a dados.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Performance & SEO</h3>
+          <p>Otimização de velocidade, acessibilidade e motores de busca.</p>
+        </article>
+
+        <article class="service-card">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h3>Manutenção & Suporte</h3>
+          <p>Atualizações contínuas, monitoramento e suporte ao deploy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / EXPERIENCE -->
+  <section id="skills" class="section skills">
+    <div class="wrap">
+      <h2 class="section-title">Habilidades & Experiência</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head">
+            <span>HTML & CSS</span><span>95%</span>
+          </div>
+          <div class="progress"><div class="bar" style="width:95%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>JavaScript</span><span>85%</span>
+          </div>
+          <div class="progress"><div class="bar" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>PHP & MySQL</span><span>88%</span>
+          </div>
+          <div class="progress"><div class="bar" style="width:88%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-head">
+            <span>Controle de Versão (Git)</span><span>90%</span>
+          </div>
+          <div class="progress"><div class="bar" style="width:90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="wrap">
+      <h2 class="section-title">Projetos Selecionados</h2>
+
+      <div class="projects-grid">
+        <!-- Project item -->
+        <article class="project-card">
+          <img src="projetos/iPhone-13-PRO-conversor-moeda-livid.vercel.app.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Conversor de Moeda</h3>
+            <p>Criei um conversor de moeda usando JS + CSS + HTML e integrei uma API.</p>
+            <div class="project-actions">
+              <a href="https://conversor-moeda-livid.vercel.app/" target="_blank" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/filme.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Informações de Filmes</h3>
+            <p>Criei uma página que filtra informações de qualquer filme (HTML/CSS/JS + API).</p>
+            <div class="project-actions">
+              <a href="#" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/tradutor.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Tradutor</h3>
+            <p>Criei uma página que traduz entre diferentes idiomas (HTML/CSS/JS + API).</p>
+            <div class="project-actions">
+              <a href="#" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/crono.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Cronómetro</h3>
+            <p>Criei um cronómetro usando HTML/CSS/JS.</p>
+            <div class="project-actions">
+              <a href="#" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/iPhone-13-PRO-clima-app-ifraim.vercel.app.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Clima App</h3>
+            <p>Criei um site que mostra o estado climático de qualquer local usando JS + HTML + CSS.</p>
+            <div class="project-actions">
+              <a href="https://clima-app-ifraim.vercel.app/" target="_blank" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/cafe.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Cafeteria</h3>
+            <p>Criei um site para uma cafeteria usando JS + HTML + CSS.</p>
+            <div class="project-actions">
+              <a href="https://ifraimlopes.github.io/cafeteria/intex.html" target="_blank" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/adidas.png" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Adidas Store</h3>
+            <p>Criei um site da Adidas enquanto aprimorava HTML + CSS.</p>
+            <div class="project-actions">
+              <a href="https://ifraimlopes.github.io/project_Adidas/intex.html" target="_blank" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/Galaxy-Tab-S7-127.0.0.1.png" id="img-galaxy" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Relógio Digital</h3>
+            <p>Criei um relógio digital usando HTML/CSS/JS.</p>
+            <div class="project-actions">
+              <a href="#" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="projetos/Macbook-Air-ifraimlopes.github.io.png" id="imggalaxy" alt="Thumbnail do projeto">
+          <div class="project-body">
+            <h3>Plataforma Africell</h3>
+            <p>Criei um site para a operadora Africell (HTML/CSS).</p>
+            <p>Sem responsividade, apenas disponível em Desktop</p>
+            <div class="project-actions">
+              <a href="#" class="link">Ver Projeto</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <h2 class="section-title">Contato</h2>
+      <div class="contact-grid">
+
+        <form id="contactForm" class="contact-form" action="#" method="post" enctype="text/plain">
+          <div class="what">
+            <a class="btn outline" href="https://wa.me/244927217208" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </form>
+
+        <aside class="contact-info">
+          <h3>Entre em contato</h3>
+          <p>Prefere falar diretamente? Use um dos canais abaixo:</p>
+          <ul id="redes">
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:ifraimlopes213@gmail.com">ifraimlopes213@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone"></i> +244 927217208</li>
+            <li><i class="fa-solid fa-globe"></i> Luanda, Angola (disponível para trabalho remoto)</li>
+          </ul>
+
+          <div class="socials">
+             <a id="link" href="https://github.com/IfraimLopes"><i class="fa-brands fa-github"></i></a>
+            <a id="link" href="https://linkedin.com/in/teuusuario"><i class="fa-brands fa-linkedin"></i></a>
+            <a id="link" href="https://instagram.com/_.ifraim"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>© <strong>ifraSites</strong> — Desenvolvido por Ifraim Lopes</div>
+      <div class="footer-links">
+        <a href="#privacy">Privacidade</a>
+        <a href="#terms">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

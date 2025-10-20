@@ -1,0 +1,248 @@
+/* === MOBILE RESPONSIVE === */
+
+/* GERAL */
+@media (max-width: 700px) {
+  body {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  #home{
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    margin-left: 80px;
+
+    & h1{
+        font-size: 23px;
+    }
+    
+}
+
+ .contact-info{
+    margin-bottom: 30px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+  .wrap {
+    width: 92%;
+  }
+
+
+   /* wrap ocupa toda a largura */
+  .wrap {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px; /* padding opcional */
+  }
+
+  /* hero */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 10px;
+    margin: 0 auto;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* HEADER */
+  .site-header .wrap {
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  padding: 40px 10px; /* reduz o padding lateral */
+  margin: 0 auto;
+}
+
+.hero-left {
+  width: 100%; /* ocupa toda a largura disponível */
+  max-width: 100%; /* remove limite de 600px */
+}
+
+
+  /* Remove imagem no mobile */
+  .portrait img {
+    display: none;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-text {
+    width: 100%;
+    padding: 24px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+  }
+
+  .about-text p {
+    font-size: 0.94rem;
+  }
+
+  .info-list {
+    text-align: left;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* CONTACT */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    color: black;
+  }
+
+  /* FOOTER */
+  .footer-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* === BOTÃO HAMBÚRGUER === */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 34px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #111827;
+  border-radius: 2px;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Efeito X quando o menu abre */
+.nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mostra apenas no mobile */
+@media (max-width: 720px) {
+  .nav-toggle {
+    display: flex;
+  }
+}
