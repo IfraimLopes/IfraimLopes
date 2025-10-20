@@ -22,9 +22,11 @@ body{
 
 /* container */
 .wrap{
+  
   width:90%;
   max-width:var(--max-width);
   margin:0 auto;
+
 }
 
 /* HEADER / NAV */
@@ -337,6 +339,7 @@ body{
 }
 
 /* CONTACT */
+
 .contact-grid{ display:grid; grid-template-columns: 1fr 360px; gap:28px; align-items:start;  }
 .contact-form {display: flex; justify-content: center; }
 .contact-form a { padding: 20px 70px; border-radius: 10px; text-decoration: none;}
@@ -348,7 +351,61 @@ body{
   margin-left: -30px;
 }
 
-.form-actions{ margin-top:12px; display:flex; gap:12px; }
+#ceet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#w{
+  border: 2px solid green;
+  color: green;
+}
+
+#w:hover{
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+}
+
+#Email{
+  text-decoration: none;
+  color: #111827;
+  
+}
+
+#ceet #linkbaixo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid green;
+  color: green;
+  margin-top: 80px;
+
+}
+
+.outline{
+  border: 2px solid green;
+  color: green;
+}
+
+
+#ceet #linkbaixo:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: green;
+  color: white;
+  margin-top: 80px;
+
+}
+
+
+
+
+.form-actions{ margin-top:12px; display:flex; gap:12px;}
 
 /* FOOTER */
 .site-footer{ padding:20px 0; border-top: 1px solid rgba(15,23,42,0.04); color:var(--muted) }
