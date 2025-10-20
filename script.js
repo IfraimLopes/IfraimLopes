@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  function stop(){
+    window.alert("Este projeto ainda não foi disponiblizado.")
+  }
+
+
   // Basic form submit feedback (prevents actual mailto test in dev)
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', function (e) {
